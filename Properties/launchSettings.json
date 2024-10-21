@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ItlaPrimerModulo": {
+      "commandName": "Project",
+      "workingDirectory": "C:\\Users\\jose.diaz\\Documents\\ItlaPrimerModulo\\Debug\\net8.0"
+    }
+  }
+}
