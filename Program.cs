@@ -10,20 +10,17 @@ namespace ItlaPrimerModulo
         static void Main(string[] args)
         {            
             Console.WriteLine("ingresa tu primer valor numérico: ");
-            int primerNum = int.Parse(Console.ReadLine());
+            string? input1 = Console.ReadLine();
+            int Primer_resultado = input1 != null ? int.Parse(input1 ) : 0;
 
             Console.WriteLine("ingresa tu segundo valor numérico: ");
-            int segundoNum = int.Parse(Console.ReadLine());
+            string? input2 = Console.ReadLine();
+            int Segundo_resultado = input2 != null ? int.Parse(input2) : 0;
 
-            int primerResultado = primerNum + segundoNum;
-            Console.WriteLine("La suma de los numeros es: " + primerResultado);
+            Calculator.MostrarSuma_Resta(Primer_resultado, Segundo_resultado);
 
-            int segundoResultado = primerNum - segundoNum;
-            Console.WriteLine("La resta de los numeros es " + segundoResultado);    
-            {
-                // Se utiliza el metodo Math.Max para arrojar el valor mas grande
-                Console.WriteLine(Math.Max(primerNum, segundoNum));
-            }
+            Calculator.MostrarProducto_Cociente(Primer_resultado, Segundo_resultado);
+
         }
 
     }
