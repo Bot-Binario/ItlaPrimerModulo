@@ -17,10 +17,19 @@ namespace ItlaPrimerModulo
             string? input2 = Console.ReadLine();
             int Segundo_resultado = input2 != null ? int.Parse(input2) : 0;
 
-            Calculator.MostrarSuma_Resta(Primer_resultado, Segundo_resultado);
+            {
+                if (Primer_resultado > Segundo_resultado)
+                {
+                    Calculator.MostrarSuma_Resta(Primer_resultado, Segundo_resultado);
 
-            Calculator.MostrarProducto_Cociente(Primer_resultado, Segundo_resultado);
+                }
 
+                else
+                {
+                    Calculator.MostrarProducto_Cociente(Primer_resultado, Segundo_resultado);
+                }
+
+            }
         }
 
     }
